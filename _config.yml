@@ -73,7 +73,6 @@ theme: next
 
 deploy:
   type: git
-  repo: https://github.com/Afanyiyu/ilharper-vbox-moe
   repo:
     github:
       url: https://github.com/Afanyiyu/ilharper-vbox-moe
