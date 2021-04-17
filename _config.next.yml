@@ -1,0 +1,40 @@
+scheme: Gemini
+minify: true
+darkmode: true
+
+favicon:
+  small: /images/favicon/favicon-16x16.png
+  medium: /images/favicon/favicon-32x32.png
+  apple_touch_icon: /images/favicon/apple-touch-icon.png
+  safari_pinned_tab: /images/favicon/safari-pinned-tab.svg
+
+creative_commons:
+  license: by-nc-sa
+  sidebar: true
+  post: true
+  language: deed.zh
+
+menu:
+  home: /
+  about: /about/
+  tags: /tags/
+  categories: /categories/
+  archives: /archives/
+  # sitemap: /sitemap.xml
+
+menu_settings:
+  icons: true
+  badges: false
+
+sitemap:
+  path: sitemap.xml
+  rel: false
+  tags: true
+  categories: true
+
+tagcloud:
+  min: 12 # Minimun font size in px
+  max: 30 # Maxium font size in px
+  amount: 200 # Total amount of tags
+  orderby: name # Order of tags
+  order: 1 # Sort order
