@@ -24,6 +24,4 @@ jobs:
       - name: Deploy
         run: ./node_modules/.bin/hexo deploy
         env:
-          EMAIL: afanyiyu@hotmail.com
-          NAME: 'Il Harper'
           VERCEL_DEPLOY_TOKEN: ${{ secrets.VERCEL_DEPLOY_TOKEN }}
