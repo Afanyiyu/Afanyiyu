@@ -7,19 +7,23 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: Clean
-      uses: heowc/action-hexo@main
-      with:
-        args: clean
-    - name: Generate
-      uses: heowc/action-hexo@main
-      with:
-        args: generate
-    - name: Deploy
-      uses: heowc/action-hexo@main
-      env:
-        EMAIL: afanyiyu@hotmail.com
-        NAME: 'Il Harper'
-        VERCEL_DEPLOY_TOKEN: ${{ secrets.VERCEL_DEPLOY_TOKEN }}
-      with:
-        args: deploy
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: NPM Install
+        run: npm i
+      - name: Clean
+        run: ./node_modules/.bin/hexo clean
+      - name: Generate
+        run: ./node_modules/.bin/hexo generate
+      - name: Deploy
+        run: ./node_modules/.bin/hexo deploy
+        env:
+          EMAIL: afanyiyu@hotmail.com
+          NAME: 'Il Harper'
+          VERCEL_DEPLOY_TOKEN: ${{ secrets.VERCEL_DEPLOY_TOKEN }}
