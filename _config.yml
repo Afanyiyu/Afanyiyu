@@ -78,8 +78,6 @@ deploy:
       url: https://github.com/Afanyiyu/ilharper-vbox-moe
       branch: master
       token: $VERCEL_DEPLOY_TOKEN
-  branch: master
   message: 'IlHarper Blog Deploy'
   name: 'Il Harper'
   email: 'afanyiyu@hotmail.com'
-  token: $VERCEL_DEPLOY_TOKEN
