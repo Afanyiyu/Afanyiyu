@@ -75,7 +75,7 @@ deploy:
   type: git
   repo: git@github.com:Afanyiyu/ilharper-vbox-moe.git
   branch: master
-  token: $GITHUB_TOKEN
+  token: $VERCEL_DEPLOY_TOKEN
   message: 'IlHarper Blog Deploy'
   name: 'Il Harper'
   email: 'afanyiyu@hotmail.com'
