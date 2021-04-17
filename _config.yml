@@ -78,4 +78,4 @@ deploy:
   message: 'IlHarper Blog Deploy'
   name: 'Il Harper'
   email: 'afanyiyu@hotmail.com'
-  token: $VERCEL_DEPLOY_TOKEN
+  token: '$VERCEL_DEPLOY_TOKEN'
