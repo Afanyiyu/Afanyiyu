@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://s3.undefined.moe/images/2021/05/08/jou309c4452d29af1f0.png" width="800px">
+<img src="https://cdn.jsdelivr.net/gh/Afanyiyu/img/img-picgo/jou.png" width="800px">
 
 </div>
 
