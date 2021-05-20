@@ -94,8 +94,8 @@ i18n:
     - tag
     - index
 
-# permalink: :lang/:title/
-permalink: :title/
+permalink: :lang/:title/
+# permalink: :title/
 new_post_name: :lang/:title.md
 
 filter_optimize:
