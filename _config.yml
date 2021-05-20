@@ -87,7 +87,7 @@ i18n_dir: :lang
 i18n:
   type:
     - page
-    - post
+    # - post
   generator:
     - archive
     - category
