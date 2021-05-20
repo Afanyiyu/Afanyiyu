@@ -15,11 +15,11 @@ creative_commons:
   language: deed.zh
 
 menu:
-  home: /
-  about: /about/
-  tags: /tags/
-  categories: /categories/
-  archives: /archives/
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
   # sitemap: /sitemap.xml
 
 menu_settings:
@@ -38,6 +38,13 @@ tagcloud:
   amount: 200 # Total amount of tags
   orderby: name # Order of tags
   order: 1 # Sort order
+
+footer:
+  powered: false
+
+post_meta:
+  updated_at:
+    enable: false
 
 # I18n
 language_switcher: true
