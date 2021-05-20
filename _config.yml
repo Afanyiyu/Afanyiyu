@@ -98,3 +98,9 @@ filter_optimize:
     minify: true
     bundle: true
   priority: 12
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html

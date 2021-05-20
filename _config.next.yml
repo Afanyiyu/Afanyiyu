@@ -86,3 +86,10 @@ bookmark:
 language_switcher: true
 cache:
   enable: false
+
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+  unescape: false
+  preload: false
