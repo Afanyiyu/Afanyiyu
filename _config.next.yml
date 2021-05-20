@@ -57,6 +57,15 @@ reward:
   # bitcoin: /images/pay/bitcoin.png
 
 preconnect: true
+pjax: true
+fancybox: false
+mediumzoom: true
+quicklink:
+  enable: true
+motion:
+  enable: false
+nprogress:
+  enable: true
 
 codeblock:
   theme:
