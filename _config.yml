@@ -7,9 +7,6 @@ author: Il Harper
 timezone: ''
 
 url: https://ilharper.vbox.moe
-# permalink: :year/:month/:day/:title/
-# permalink: :title/
-permalink_defaults:
 pretty_urls:
   trailing_index: false
   trailing_html: false
@@ -94,6 +91,8 @@ i18n:
     - tag
     - index
 
+permalink_defaults:
+  lang: en
 permalink: :lang/:title/
 # permalink: :title/
 new_post_name: :lang/:title.md
