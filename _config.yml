@@ -104,3 +104,7 @@ search:
   field: post
   content: true
   format: html
+
+all_minifier: true
+image_minifier:
+  enable: false
