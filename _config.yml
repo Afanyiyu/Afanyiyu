@@ -47,6 +47,7 @@ index_generator:
   path: ''
   per_page: 15
   order_by: -date
+  single_language_index: false
 
 default_category: uncategorized
 category_map:
@@ -83,8 +84,18 @@ language:
   - zh-CN
   - en
 i18n_dir: :lang
+i18n:
+  type:
+    - page
+    - post
+  generator:
+    - archive
+    - category
+    - tag
+    - index
 
-permalink: :lang/:title/
+# permalink: :lang/:title/
+permalink: :title/
 new_post_name: :lang/:title.md
 
 filter_optimize:
@@ -108,3 +119,6 @@ search:
 all_minifier: true
 image_minifier:
   enable: false
+
+marked:
+  smartypants: false
