@@ -86,3 +86,15 @@ i18n_dir: :lang
 
 permalink: :lang/:title/
 new_post_name: :lang/:title.md
+
+filter_optimize:
+  enable: true
+  remove_comments: false
+  css:
+    minify: true
+    bundle: true
+    delivery: true
+  js:
+    minify: true
+    bundle: true
+  priority: 12
