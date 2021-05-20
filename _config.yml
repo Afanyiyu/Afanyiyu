@@ -3,12 +3,12 @@ title: "IlHarper's Blog"
 description: '耳を澄ましてはいけません。'
 keywords: ilharper
 author: Il Harper
-language: 'zh-CN'
+# language: 'zh-CN'
 timezone: ''
 
 url: https://ilharper.vbox.moe
 # permalink: :year/:month/:day/:title/
-permalink: :title/
+# permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: false
@@ -20,10 +20,8 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
-i18n_dir: :lang
 skip_render:
 
-new_post_name: :title.md
 default_layout: post
 titlecase: false
 external_link:
@@ -82,3 +80,12 @@ deploy:
   message: 'IlHarper Blog Deploy'
   name: 'Il Harper'
   email: 'afanyiyu@hotmail.com'
+
+# I18n
+language:
+  - zh-CN
+  - en
+i18n_dir: :lang
+
+permalink: :lang/:title/
+new_post_name: :lang/:title.md
