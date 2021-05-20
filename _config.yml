@@ -81,8 +81,8 @@ deploy:
 
 # I18n
 language:
-  - zh-CN
   - en
+  - zh-CN
 i18n_dir: :lang
 i18n:
   type:
