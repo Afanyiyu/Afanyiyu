@@ -44,7 +44,7 @@ index_generator:
   path: ''
   per_page: 15
   order_by: -date
-  single_language_index: false
+  # single_language_index: false
 
 default_category: uncategorized
 category_map:
