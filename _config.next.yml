@@ -46,6 +46,33 @@ post_meta:
   updated_at:
     enable: false
 
+# Reward
+reward_settings:
+  enable: true
+  animation: false
+  comment: Buy me a coffee
+reward:
+  wechatpay: /images/pay/wechatpay.png
+  alipay: /images/pay/alipay.png
+  # bitcoin: /images/pay/bitcoin.png
+
+preconnect: true
+
+codeblock:
+  theme:
+    light: vs2015
+    dark: vs2015
+  copy_button:
+    enable: true
+
+back2top:
+  enable: true
+  scrollpercent: true
+bookmark:
+  enable: true
+  # color: "#222"
+  save: manual
+
 # I18n
 language_switcher: true
 cache:
