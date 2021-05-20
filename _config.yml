@@ -88,7 +88,7 @@ permalink: :lang/:title/
 new_post_name: :lang/:title.md
 
 filter_optimize:
-  enable: true
+  enable: false
   remove_comments: false
   css:
     minify: true
