@@ -6,3 +6,5 @@ tags:
 ---
 
 This is my first blog.
+
+I created this blog to save things worth documenting.
