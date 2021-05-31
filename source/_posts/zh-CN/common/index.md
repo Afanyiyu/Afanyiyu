@@ -12,3 +12,5 @@ tags:
 <!-- more -->
 
 有些事情应该记下来，所以我创建了这个博客。
+
+本博客在 [此处](https://github.com/Afanyiyu/Afanyiyu) 开源。
