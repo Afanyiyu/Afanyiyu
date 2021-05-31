@@ -41,9 +41,9 @@ tagcloud:
 footer:
   powered: false
 
-post_meta:
-  updated_at:
-    enable: false
+# post_meta:
+#   updated_at:
+#     enable: false
 
 # Reward
 reward_settings:
