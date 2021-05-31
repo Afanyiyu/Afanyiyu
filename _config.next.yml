@@ -98,3 +98,5 @@ vendors:
   plugins: jsdelivr
   anime:
   fontawesome:
+
+index_with_subtitle: true
