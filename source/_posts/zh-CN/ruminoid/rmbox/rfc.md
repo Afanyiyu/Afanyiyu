@@ -93,7 +93,7 @@ public interface IOperation
 }
 ```
 
-其中，`RequiredConfigSections` 向 Rmbox 提供该操作所需的 **配置项（ConfigSection）** 的类型签名列表；`Generate` 方法用于接收 **配置项（ConfigSection）** 提供的参数并生成 **任务命令（TaskCommand）** 列表。
+其中，`RequiredConfigSections` 向 Rmbox 提供该操作所需的 **配置项（ConfigSection）** 的类型签名列表以及对每个配置项可选的自定义选项；`Generate` 方法用于接收 **配置项（ConfigSection）** 提供的参数并生成 **任务命令（TaskCommand）** 列表。
 
 #### 任务命令（TaskCommand）
 
@@ -127,6 +127,8 @@ public abstract class ConfigSectionBase : UserControl
 ```
 
 `ConfigSectionBase` 类继承自 Avalonia 的 `UserControl` 类，使得继承的实例可以直接作为一个用户控件在 GUI 中呈现。
+
+每个配置项在构造函数内需要接受一个 `JToken` 类型的参数，用于接收操作传来的自定义选项。
 
 #### 格式器（Formatter）
 
@@ -246,9 +248,9 @@ Rmbox 通过丰富的插件提供了多种多样的 **操作（Operation）**，
 
 **Rmbox 组合** 在 `rmbox-shell` 启动时即会加载，之后 `rmbox-shell` 将成功加载的插件按照分类列出一个树形列表，供用户选择和创建 **操作（Operation）**。
 
-用户创建操作时，`rmbox-shell` 使用 **Rmbox 组合** 解析该操作所需的 **配置项（ConfigSection）** 并按照顺序加载，供用户调整参数。
+用户创建操作时，`rmbox-shell` 使用 **Rmbox 组合** 解析该操作所需的 **配置项（ConfigSection）** 并按照顺序加载，供用户调整参数。操作所提供的针对每个配置项的自定义选项通过配置项的构造函数传递。
 
-用户调整完参数并点击「添加到队列」后，`rmbox-shell` 将对应的操作交由 **导出器（Exporter）** 导出 **项目模型（ProjectModel）** 并交由 **队列服务（QueueService）** 运行。
+用户调整完参数并点击「添加到队列」后，`rmbox-shell` 将对应的操作交由 **导出器（Exporter）** 导出 **项目模型（ProjectModel）** 并交由 **队列服务（QueueService）** 运行。在用户点击之后，`rmbox-shell` 会直接提取每个配置项的 `Config` 属性作为参数，因此这要求配置项在用户每一次调节参数之后都立即计算 `Config` 属性中的计算属性（Computed Properties）。
 
 ### 运行工具
 
